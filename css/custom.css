@@ -1,0 +1,23 @@
+/* 核心价值观/JOJO密语 点击特效样式 */
+.core-value-click-effect {
+  position: absolute; /* 必须是绝对定位 */
+  z-index: 9999; /* 确保在最顶层 */
+  font-size: 10px; /* 文字大小（已改小）*/
+  font-weight: bold; /* 字体加粗 */
+  user-select: none; /* 防止文字被选中 */
+  pointer-events: none; /* 穿透鼠标事件 */
+  white-space: nowrap; /* 防止文字换行 */
+  animation: floatUpAndFade 1s forwards; /* 应用动画 */
+}
+
+/* 定义动画关键帧 (无需修改) */
+@keyframes floatUpAndFade {
+  0% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-80px) scale(1.5);
+  }
+}
